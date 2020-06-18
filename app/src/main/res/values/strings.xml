@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">InterestCalculator</string>
+    <string name="interest_rate_per_anum">Interest rate (% per anum)</string>
+    <string name="tenure_years">Tenure (Years)</string>
+    <string name="savings_amount">Savings Amount</string>
+    <string name="interest_calculator">Interest Calculator</string>
+    <string name="calculate_monthly_payment">Calculate Monthly Payment</string>
+    <string name="download_saving_schedule">Download Saving Schedule</string>
 </resources>
