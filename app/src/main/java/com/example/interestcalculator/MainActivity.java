@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SavingsAmountET.findViewById(R.id.EditTv1);
-        TenureET.findViewById(R.id.EditTv2);
-        InterestRateET.findViewById(R.id.EditTv3);
+        SavingsAmountET = findViewById(R.id.EditTv1);
+        TenureET = findViewById(R.id.EditTv2);
+        InterestRateET = findViewById(R.id.EditTv3);
 
 
-        String Amount = SavingsAmountET.toString();
-        String Tenure = TenureET.toString();
-        String InterestRate = InterestRateET.toString();
+        String Amount = SavingsAmountET.getText().toString();
+        String Tenure = TenureET.getText().toString();
+        String InterestRate = InterestRateET.getText().toString();
 
 
 

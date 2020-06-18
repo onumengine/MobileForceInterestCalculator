@@ -74,9 +74,10 @@
 
     <Button
         android:id="@+id/ButtonID"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:padding="8dp"
         android:background="@drawable/btn_bg"
         android:text="@string/calculate_monthly_payment"
         android:textAllCaps="false"
@@ -88,9 +89,10 @@
 
     <Button
         android:id="@+id/Button2ID"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:padding="8dp"
         android:background="@drawable/btn_bg2"
         android:text="@string/download_saving_schedule"
         android:textAllCaps="false"
