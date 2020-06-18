@@ -3,16 +3,104 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="10dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
+        android:textColor="#0B2ECF"
+        app:layout_constraintLeft_toLeftOf="@id/EditTv1"
+        app:layout_constraintRight_toRightOf="@id/EditTv1"
+        app:layout_constraintBottom_toTopOf="@id/EditTv1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:textSize="25sp"
+        android:text="@string/interest_calculator"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/EditTv1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/et"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="@string/savings_amount"
+        android:textColor="#0B2ECF"
+        android:textColorHint="#0B2ECF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/EditTv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:background="@drawable/et"
+        android:gravity="center"
+        android:hint="@string/tenure_years"
+        android:textColor="#0B2ECF"
+        android:textColorHint="#0B2ECF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/EditTv1"
+        app:layout_constraintVertical_bias="0.060000002"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/EditTv3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/et"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="@string/interest_rate_per_anum"
+        android:textColor="#0B2ECF"
+        android:textColorHint="#0B2ECF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTv2"
+        app:layout_constraintVertical_bias="0.100000024"
+        tools:ignore="Autofill" />
+
+
+    <Button
+        android:id="@+id/ButtonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:padding="8dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/calculate_monthly_payment"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTv3" />
+
+    <Button
+        android:id="@+id/Button2ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:padding="8dp"
+        android:background="@drawable/btn_bg2"
+        android:text="@string/download_saving_schedule"
+        android:textAllCaps="false"
+        android:textColor="#0B2ECF"
+
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintLeft_toRightOf="@id/ButtonID"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTv3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
